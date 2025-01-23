@@ -1,0 +1,66 @@
+.spinner {
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  /* Style général pour le carousel */
+.slick-slide {
+    display: flex;          /* Utilise Flexbox */
+    justify-content: center;  /* Centre les éléments horizontalement */
+    align-items: center;    /* Centre les éléments verticalement */
+    margin-left: 5px;
+  }
+  
+  /* Style pour chaque image */
+  .slick-slide img {
+    max-width: 100%;        /* Limite la largeur de l'image à 100% */
+    max-height: 500px;      /* Fixe une hauteur maximale */
+    object-fit: cover;      /* Adapte l'image pour couvrir le conteneur sans distorsion */
+    border-radius: 10px;    /* Ajoute des bords arrondis */
+  }
+  
+  /* Style général pour chaque élément du carousel */
+.carousel-item {
+    display: flex;              /* Utilise Flexbox pour aligner l'image et les infos */
+    align-items: center;        /* Centre les éléments verticalement */
+    justify-content: flex-start; /* Aligne les éléments à gauche */
+  }
+  
+  /* Style pour l'image du chien */
+  .carousel-image {
+    flex: 1;                    /* L'image occupe une partie de l'espace */
+    display: flex;              
+    justify-content: center;    /* Centrer l'image horizontalement */
+  }
+  
+  .dog-image {
+    max-width: 100%;            /* Limite la largeur de l'image */
+    max-height: 500px;          /* Fixe une hauteur maximale */
+    object-fit: cover;          /* Adapte l'image pour couvrir sans déformer */
+    border-radius: 10px;        /* Bord arrondi */
+  }
+  
+  /* Style pour les informations à droite */
+  .carousel-info {
+    flex: 1;                    /* L'espace pour les informations occupe aussi une partie de l'espace */
+    padding-left: 20px;         /* Ajoute un espacement à gauche pour séparer l'image des infos */
+    text-align: left;           /* Aligne le texte à gauche */
+    font-size: 1.2rem;          /* Taille du texte */
+    color: #333;                /* Couleur du texte */
+  }
+  
+  .carousel-info h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
