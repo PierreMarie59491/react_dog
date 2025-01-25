@@ -9,7 +9,7 @@ const App = () => {
     <div>
       <DogSearch/>
       {/* <DogList /> */}
-      <DogCarousel />
+      {/* <DogCarousel /> */}
       {/* <DogImages /> */}
     </div>
   );
