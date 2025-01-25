@@ -45,3 +45,44 @@
     background-color: #0056b3;
   }
   
+  .image-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px; /* Espacement entre les images */
+  }
+  
+  .image-item {
+    flex: 1 1 calc(25% - 10px); /* 4 images par ligne avec un gap de 10px */
+    max-width: calc(25% - 10px); /* Même largeur que la flex-basis */
+    box-sizing: border-box;
+  }
+  
+  .image-item img {
+    width: 100%; /* Prendre toute la largeur du conteneur */
+    height: auto; /* Préserver les proportions */
+    object-fit: cover; /* Remplir l'espace sans déformer */
+    border-radius: 8px; /* Coins arrondis */
+  }
+
+  .suggestion-item {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.suggestion-item.complete {
+  background-color: #d4edda; /* Vert pâle */
+  color: #155724; /* Vert foncé */
+}
+
+.suggestion-item.incomplete {
+  background-color: #f8d7da; /* Rouge pâle */
+  color: #721c24; /* Rouge foncé */
+}
+
+.suggestion-item:hover {
+  opacity: 0.8; /* Léger effet de hover */
+}
